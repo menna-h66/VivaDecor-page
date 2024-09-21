@@ -1,0 +1,550 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+.container{
+    width: 80% !important;
+    padding: 0px !important;
+    margin: auto;
+    height: max-content;
+}
+.navbar .container-fluid{
+    padding: 0px 10%;
+}
+ .navbar-brand{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+ .navbar-brand span{
+    position: absolute;
+}
+ .nav_border{
+    border: 3px solid #000;
+    border-right:none;
+    border-radius: 3px;
+    width: 22px;
+    height: 27px;
+}
+ .nav_logo{
+    left: 5px;
+}
+.navbar .navbar-nav{
+    gap: 30px;
+    font-weight: 600;
+}
+.navbar .btn{
+    width: 120px;
+}
+
+@media (max-width : 900px){
+    .navbar .container-fluid{
+        padding: 0px 5%;
+    }
+    .navbar .navbar-nav{
+        gap: 0px;
+    }
+}
+
+/**************************************interior***************************************************/
+
+main{
+    position: relative;
+    top: 55px;
+}
+main .interior{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+main .interior_info h1{
+    font-weight: 500;
+    font-size: 110px;
+    margin-left: -10px;
+}
+main .interior_info p{
+    margin-top: 18px;
+    font-size: 21px;
+}
+main .interior_imageup img{
+    float: right;
+    width: 90%;
+    height: 320px;
+}
+main .interior_start{
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+}
+main .interior_rate .btn{
+    padding: 15px 50px;
+    margin-top: 40px;
+}
+main .interior_rate .rate{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 70px ;
+}
+main .interior_rate .rate h1{
+    font-size: 50px;
+}
+main .interior_rate .rate p{
+    font-size: 16px;
+}
+main .interior_imageDown {
+   position: relative;
+   height: 100%;
+}
+main .interior_imageDown div{
+    position: absolute;
+}
+main .interior_imageDown .square{
+    width: 150px;
+    height: 130px;
+    border: 2px solid #000;
+    left: 40px;
+}
+main .interior_imageDown .img{
+   position: relative;
+   width: 470px;
+   height: 270px;
+   left: 10%;
+   top: 20px;
+}
+main .interior_imageDown img{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+main .interior_imageDown .img .black_square{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    right: -15%;
+}
+
+@media (max-width : 900px){
+        
+    main{
+        top: 35px;
+    }   
+    .container{
+        width: 90% !important;
+    }
+    main .interior{
+        display: block;
+    }
+    main .interior_info h1{
+        font-size: 38px;
+        margin-left: 0px;
+        font-weight: 700;
+    }
+    main .interior_info p{
+        font-size: 18px;
+    }
+    main .interior_imageup img{
+        float:none;
+    }
+    main .interior_start{
+        display: block;
+    }
+    main .interior_rate .rate{
+        margin: 25px 0px;
+    }
+    main .interior_rate .rate h1{
+        font-size: 35px;
+    }
+    main .interior_rate .rate p{
+        font-size: 12px;
+    }
+    main .interior_imageDown .square{
+        width: 100px;
+        height: 80px;
+        left: 0%;
+    }
+    main .interior_imageDown .img{
+       width: 300px;
+       height: 220px;
+       left: 10px;
+       top: 10px;
+    }
+    main .interior_imageDown .img .black_square{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        right: -10%;
+    }
+}
+
+/*************************************************Our Services**************************************/
+
+.our_services{
+    margin-top: 250px;
+    position: relative;
+}
+.our_services h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.our_services h1 p{
+    border-bottom: 3px solid #000;
+    width: 100px;
+    height: 22px;
+    margin-right: 20px;
+}
+.our_services .Design{
+    display: grid;
+    grid-template-columns:repeat(3 , 31.5%);
+    column-gap: 3%;
+}
+.our_services .Lighting_Design{
+    display: flex;
+}
+.our_services .Lighting_Design img{
+    width: 60px;
+    height: 62px;
+    margin-right: 20px;
+}
+.our_services .Lighting_Design .Lighting_Design_info h3{
+    font-size: 30px;
+    font-weight: 600px;
+}
+.our_services .Lighting_Design .Lighting_Design_info p{
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 26px;
+}
+
+@media (max-width : 900px){
+    
+    .our_services .Design{
+        display: block;
+    }
+    .our_services h1{
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .our_services .Lighting_Design{
+        margin-top: 30px;
+    }
+    .our_services h1 p{
+        width: 60px;
+    }
+}
+/*********************************************Designing Your Dream*******************************/
+
+.Designing{
+    margin-top: 150px;
+    position: relative;
+}
+.Designing .container{
+    display: grid;
+    grid-template-columns: repeat(2 , 46%);
+    column-gap: 8%;
+}
+.Designing .Designing_img , .Designing .Designing_info{
+    width: 100%;
+    height: 550px;
+}
+.Designing .Designing_img img{
+    width: 100%;
+    height: 100%;
+}
+.Designing .Designing_info h1{
+    font-size: 49.3px;
+    font-weight: 600;
+}
+.Designing .Designing_info p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.Designing .Designing_info .Designing_info_row{
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+    padding: 25px 0px;
+}
+.Designing .Designing_info .btn{
+    margin-top: 90px;
+}
+
+@media (max-width : 900px){
+    .Designing .container{
+        display: block;
+    }
+    .Designing .Designing_img{
+        height: 250px;
+        margin: 60px 0px 20px;
+    }
+    .Designing .Designing_info h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .Designing .Designing_info .btn{
+        margin: 50px 0px;
+    }
+    
+}
+
+/******************************************Simple Steps**************************/
+
+.roww{
+    display: flex;
+    margin-top: 5px;
+}
+.roww .icon{
+    height: 150px;
+    position: relative;
+}
+.roww .icon i{
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(31, 31, 31, 1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roww .icon span{
+    position: absolute;
+    border: 1px solid rgba(155, 155, 155, 1);
+    height: 90px;
+    width: 1px;
+    left: 20px;
+    margin-top: 10px;
+}
+.roww .roww_info{
+    margin-left: 40px;
+}
+.roww .roww_info h5{
+    font-size: 24px;
+    font-weight: 700;
+}
+.roww .roww_info p{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+/****************************************What Our Customers Say About Us***********************************/
+
+.Designing_team{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 23%;
+}
+.Designing_img .btns button{
+    width: 63px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 20px;
+    border: none;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: rgba(241, 241, 241, 1);
+}
+.Designing_team .black_div{
+    width: 490px;
+    height:max-content;
+    background-color: #000;
+    border-radius: 4px;
+    margin-right: 40px;
+    color: #fff;
+    padding: 40px 40px 90px;
+}
+.Designing_team .black_div h2 i{
+    font-size: 50px;
+}
+.Designing_team .black_div p{
+    font-size: 20px;
+    margin: 40px 0px 60px;
+}
+.person_info{
+    display: flex;
+    padding: 0px;
+}
+.person_info img{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.person_info .person_info_name h6{
+    font-size: 22px;
+    font-weight: 600;
+}
+.person_info .person_info_name p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+    color: rgba(146, 146, 146, 1);
+}
+
+@media (max-width : 900px){
+    .Designing_team{
+        display: block;
+        top: 20%;
+        left: 0px;
+    }
+    .Designing_img3{
+        display: none;
+    }
+    .Designing_team .black_div{
+        width: 90%;
+        margin: auto;
+        padding: 20px 20px 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/******************************************footer*****************************************/
+
+footer {
+    background: #000;
+    padding: 150px 0px 80px;
+    width: 100%;
+    margin-top: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+footer .card{
+    width: 55%;
+    border: none;
+    height: 330px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    position: absolute;
+    top: -500px;
+    left: 22.5%;
+}
+footer .card h1{
+    width: 600px;
+    font-size: 46px;
+    font-weight: 600px;
+    margin: 0px auto;
+}
+footer .card p{
+    width: 580px;
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 25px auto;
+    color: rgba(84, 84, 84, 1);
+}
+footer .card .input-group{
+    position: absolute;
+    bottom: 0%;
+    padding: 5px 5px 5px 35px;
+    display: grid;
+    grid-template-columns: 69.9% 30%;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.14);
+}
+footer .card .input-group input{
+    border: none;
+}
+footer .card .input-group button{
+   border-radius: 3px !important;
+   height: 55px;
+   font-size: 18px;
+}
+footer .container{
+    display: grid !important;
+    grid-template-columns: 34% repeat(3 , 20%) !important;
+    column-gap: 2%;
+}
+footer .footer_col .navbar-brand{
+    margin-bottom: 50px;
+    color: #fff;
+}
+footer .footer_col .navbar-brand:hover{
+    color: #fff;
+}
+footer .footer_col .nav_border{
+    border-color: #fff;
+}
+footer .footer_col p, footer .footer_col  .a_{
+    font-size: 17px;
+    color: rgba(209, 209, 209, 1);
+    line-height: 25px;
+}
+footer .footer_col .icons i{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(49, 49, 49, 1);
+    margin: 20px 20px 0px 0px;
+}
+footer .footer_col h6{
+    margin-bottom: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+footer .footer_col  .a_{ 
+    margin: 18px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+@media (max-width : 900px){
+    footer {
+        padding: 50px 0px 50px;
+        width: 100%;
+        margin-top: 550px;
+        display: block;
+    }
+    
+    footer .card{
+        position: relative;
+        width: 90%;
+        margin-top: 0px;
+        top: 0px;
+        left: 0%;
+        padding-top: 30px;
+    }
+    footer .card h1{
+        width: 100%;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    footer .card p{
+        width: 90%;
+        font-size: 20px;
+        margin: 25px auto;
+    }
+    footer .card .input-group button{
+       font-size: 13px;
+    }
+    footer .container{
+        display: block !important;
+        margin-top: 0px;
+    }
+    footer .footer_col h6,footer .footer_col .navbar-brand{
+        margin: 50px 0px 20px;
+    }
+}
